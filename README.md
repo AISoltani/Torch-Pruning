@@ -61,7 +61,7 @@ Please do not hesitate to open a [discussion](https://github.com/VainF/Torch-Pru
 - [ ] Block/Layer/Depth Pruning
 - [ ] Pruning benchmarks for CIFAR, ImageNet and COCO.
 
-## Installation
+## Installation.
 
 Torch-Pruning is compatible with PyTorch 1.x and 2.x. **PyTorch 1.12.1 is recommended!**
 
