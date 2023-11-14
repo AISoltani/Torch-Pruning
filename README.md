@@ -69,7 +69,6 @@ or
 ```bash
 git clone https://github.com/VainF/Torch-Pruning.git
 ```
-
 ## Quickstart
   
 Here we provide a quick start for Torch-Pruning. More explained details can be found in [tutorals](./tutorials/)
