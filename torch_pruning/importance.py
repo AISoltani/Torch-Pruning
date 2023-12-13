@@ -153,7 +153,6 @@ class BNScaleImportance(MagnitudeImportance):
         group_imp = self._normalize(group_imp, self.normalizer)
         return group_imp
 
-
 class LAMPImportance(MagnitudeImportance):
     """Layer-adaptive Sparsity for the Magnitude-based Pruning,
     https://arxiv.org/abs/2010.07611
