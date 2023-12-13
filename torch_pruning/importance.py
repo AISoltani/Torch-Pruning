@@ -300,7 +300,6 @@ class GroupNormImportance(MagnitudeImportance):
                         local_norm = local_norm.view(ch_groups, -1).sum(0)
                         local_norm = local_norm.repeat(ch_groups)
                     group_norm += local_norm
-
             elif prune_fn == function.prune_lstm_out_channels:
                 _idxs = torch.tensor(idxs)
                 local_norm = 0
