@@ -311,7 +311,6 @@ class GroupNormImportance(MagnitudeImportance):
                     postfix = ['', '_reverse']
                 else:
                     postfix = ['']
-
                 local_norm+=getattr(layer, 'weight_hh_l0')[expanded_idxs].abs().pow(self.p).sum(1).view(4, -1).sum(0)
                 local_norm+=getattr(layer, 'weight_hh_l0')[:, _idxs].abs().pow(self.p).sum(0)
                 local_norm+=getattr(layer, 'weight_ih_l0')[expanded_idxs].abs().pow(self.p).sum(1).view(4, -1).sum(0)
