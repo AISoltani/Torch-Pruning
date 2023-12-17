@@ -1,12 +1,15 @@
+# Import Libraries
+
 import sys, os
-
-sys.path.append(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
-
 import torch
 from torchvision.models import resnet18 as entry
 import torch_pruning as tp
 from torch import nn
 import torch.nn.functional as F
+
+sys.path.append(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
+
+
 
 def test_pruner():
     
