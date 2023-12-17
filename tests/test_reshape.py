@@ -1,11 +1,14 @@
+# Import Libraries
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-
 import sys, os
+import torch_pruning as tp
+
 sys.path.append(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
 
-import torch_pruning as tp
+
 class Net(nn.Module):
     def __init__(self):
         super(Net, self).__init__()
