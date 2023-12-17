@@ -1,10 +1,11 @@
 import sys, os
-
-sys.path.append(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
-
 import torch
 import torch_pruning as tp
 import torch.nn as nn
+
+sys.path.append(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
+
+
 
 class Net(nn.Module):
     def __init__(self, in_dim):
